@@ -1,0 +1,19 @@
+div {
+  border: 1px solid black;
+  box-sizing: border-box;
+  letter-spacing: normal;
+}
+.wrapper {
+  letter-spacing: -4px;
+}
+.sidemenu {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  padding-right: 10px;
+  text-align: right;
+}
+.content {
+  display: inline-block;
+  width: 70%;
+}
