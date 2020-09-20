@@ -9,3 +9,16 @@ function clickButton() {
   })
   .catch(e => console.error(e))
 }
+function doClick(form) {
+  console.log(this);
+  console.log(form);
+  let formData = new FormData(form);
+  fetch(form.getAttribute('action'), {
+    method: form.getAttribute('method'),
+    body: formData
+  }).then(
+    response => response.json()
+  ).then(
+    data => console.log(data)
+  ).catch(e => console.error(e))
+}
